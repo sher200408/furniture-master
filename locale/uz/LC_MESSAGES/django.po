@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-25 11:17+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\app_blogs\models.py:12 .\app_blogs\models.py:31 .\app_blogs\models.py:87
+msgid "title"
+msgstr "sarlavha"
+
+#: .\app_blogs\models.py:19
+msgid "parent"
+msgstr "ota-ona"
+
+#: .\app_blogs\models.py:26
+msgid "blog category"
+msgstr "blog toifasi"
+
+#: .\app_blogs\models.py:37
+msgid "blog tag"
+msgstr "blog teg"
+
+#: .\app_blogs\models.py:38
+msgid "blog tages"
+msgstr "blog teglari"
+
+#: .\app_blogs\models.py:43
+msgid "first_name"
+msgstr "ismi"
+
+#: .\app_blogs\models.py:44
+msgid "last_name"
+msgstr "Familiya"
+
+#: .\app_blogs\models.py:45
+msgid "avatar"
+msgstr "rasim"
+
+#: .\app_blogs\models.py:59
+msgid "blog author"
+msgstr "blog muallif"
+
+#: .\app_blogs\models.py:60
+msgid "blog authors"
+msgstr "blog mualliflari"
+
+#: .\app_blogs\models.py:68
+msgid "description"
+msgstr "tavsifi"
+
+#: .\app_blogs\models.py:73
+msgid "author"
+msgstr "muallif"
+
+#: .\app_blogs\models.py:74
+msgid "categories"
+msgstr "toifalar"
+
+#: .\app_blogs\models.py:75
+msgid "tags"
+msgstr "taglar"
+
+#: .\app_blogs\models.py:92 .\app_blogs\models.py:98
+msgid "user"
+msgstr "foydalanuvchi"
+
+#: .\app_blogs\models.py:107
+msgid "blog comment"
+msgstr "blog sharhi"
+
+#: .\app_blogs\models.py:108
+msgid "blog comments"
+msgstr "blog sharhilar"
+
+#: .\templates\blogs\blog-list.html:44
+msgid "Categories"
+msgstr "Toifalar"
+
+#: .\templates\blogs\blog-list.html:75 .\templates\blogs\blog-list.html:134
+msgid "Recent Posts"
+msgstr "Oxirgi xabarlar"
+
+#: .\templates\blogs\blog-list.html:85
+msgid "comments"
+msgstr "sharhilar"
+
+#: .\templates\blogs\blog-list.html:95
+msgid "READ MORE"
+msgstr "KO'PROQ O'QISH"
+
+#: .\templates\blogs\blog-list.html:106
+msgid "Blog Tags"
+msgstr "Blog teglari"
+
+#: .\templates\blogs\blog-list.html:147
+msgid " minutes ago"
+msgstr "daqiqa oldin"
+
+#: .\templates\blogs\blog-list.html:148
+msgid "Comments"
+msgstr "Sharhilar"
+
+#: .\templates\blogs\blog-list.html:156
+msgid "view more"
+msgstr "ko'proq ko'rish"
+
+#: .\templates\layouts\header-base.html:154
+msgid "My Account"
+msgstr "Men Accountim"
+
+#: .\templates\layouts\header-base.html:160
+msgid "Sign in"
+msgstr "tizimga kirish"
+
+#: .\templates\layouts\header-base.html:166
+msgid "Register Account"
+msgstr "ro'yxatdan o'tkazish"
+
+#: .\templates\layouts\header-base.html:172
+msgid "Checkout"
+msgstr "Ro'yxatdan o'chirilish"
+
+#: .\templates\layouts\header-base.html:178
+msgid "My Wishlists"
+msgstr "Mening istaklarim"
+
+#: .\templates\layouts\header-home.html:112
+msgid "Contact US"
+msgstr "Biz bilan bog'lanish"
+
+#: .\templates\layouts\header-home.html:284
+msgid ""
+"\n"
+"                                            <div>PUL QAYTARISH</div>\n"
+"                                            <div>Javob</div>\n"
+"                                            "
+msgstr ""
+
+#: .\templates\layouts\header-home.html:324
+msgid "Organic Strawberry Fruits"
+msgstr "Organik qulupnay mevalari"
+
+#: .\templates\layouts\header-home.html:338
+msgid "Total:"
+msgstr "Jami"
