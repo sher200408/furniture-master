@@ -707,6 +707,14 @@
         "documentation": {}
     },
     {
+        "label": "config",
+        "importPath": "decouple",
+        "description": "decouple",
+        "isExtraImport": true,
+        "detail": "decouple",
+        "documentation": {}
+    },
+    {
         "label": "LOCALE_PATHS",
         "importPath": "django.conf.global_settings",
         "description": "django.conf.global_settings",
@@ -1373,7 +1381,7 @@
         "kind": 5,
         "importPath": "Conf.settings",
         "description": "Conf.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-()@32vw8a1f4n1m3m=p1jox&xr*3fp+$)j(_h93   ^bis9d3xfkh'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\nSECRET_KEY = config(\"SECRET_KEY\")\nDEBUG = config(\"DEBUG\", default=False , cast=bool)\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'modeltranslation',\n    'django.contrib.admin',",
         "detail": "Conf.settings",
         "documentation": {}
     },
@@ -1382,7 +1390,7 @@
         "kind": 5,
         "importPath": "Conf.settings",
         "description": "Conf.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-()@32vw8a1f4n1m3m=p1jox&xr*3fp+$)j(_h93   ^bis9d3xfkh'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'modeltranslation',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = config(\"SECRET_KEY\")\nDEBUG = config(\"DEBUG\", default=False , cast=bool)\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'modeltranslation',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "Conf.settings",
         "documentation": {}
     },
@@ -1391,7 +1399,7 @@
         "kind": 5,
         "importPath": "Conf.settings",
         "description": "Conf.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'modeltranslation',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = config(\"DEBUG\", default=False , cast=bool)\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'modeltranslation',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "Conf.settings",
         "documentation": {}
     },
@@ -1445,7 +1453,7 @@
         "kind": 5,
         "importPath": "Conf.settings",
         "description": "Conf.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'Conf.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'Conf.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': config(\"DB_NAME\"),\n        'USER': config(\"DB_USER\"),\n        'PASSWORD': config(\"DB_PASSWORD\"),\n        'HOST': config(\"DB_HOST\"),",
         "detail": "Conf.settings",
         "documentation": {}
     },
@@ -1454,7 +1462,7 @@
         "kind": 5,
         "importPath": "Conf.settings",
         "description": "Conf.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': config(\"DB_NAME\"),\n        'USER': config(\"DB_USER\"),\n        'PASSWORD': config(\"DB_PASSWORD\"),\n        'HOST': config(\"DB_HOST\"),\n        'PORT': config(\"DB_PORT\", cast=int),\n    }\n}",
         "detail": "Conf.settings",
         "documentation": {}
     },
